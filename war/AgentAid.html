@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans'
+	rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Agent Aid</title>
+<script type="text/javascript"
+	src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="agentaid/agentaid.nocache.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="createUniqueSessionTokenServlet"></script>
+<style type="text/css">
+body,p,td,h1,a:hover,a:visited,a:active,a:link {
+	margin: 0.2em;
+	font-family: 'Droid Sans', sans-serif;
+	b
+}
+
+.gwt-Hyperlink {
+	padding-right: 1.5em;
+}
+
+.emailHolder {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.working {
+	background-color: red;
+	color: white;
+}
+
+.numericCell {
+	text-align: right;
+}
+
+.tableHeader {
+	font-weight: bold;
+	background-color: silver;
+}
+
+.clickable {
+	color: blue;
+}
+
+.clickable:hover {
+	text-decoration: underline;
+}
+</style>
+</head>
+<body>
+	<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
+		style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+	<noscript>
+		<div
+			style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+			Your web browser must have JavaScript enabled in order for this
+			application to display correctly.</div>
+	</noscript>
+	<h1>Agent Aid</h1>
+	<div id="header" style="visibility: hidden;"></div>
+	<div id="results" class="emailHolder"></div>
+	<div id="content" style="padding-top: 1em;"></div>
+	<!-- Change data-clientid between production vs development. Development: 706108085847.apps.googleusercontent.com Production: 706108085847-n6vffuadpirk5kioh0eif697h4ciavm5.apps.googleusercontent.com -->
+	<span id="signinButton"> <span class="g-signin"
+		data-callback="signinCallback"
+		data-clientid="706108085847-n6vffuadpirk5kioh0eif697h4ciavm5.apps.googleusercontent.com"
+		data-cookiepolicy="single_host_origin"
+		data-requestvisibleactions="http://schemas.google.com/AddActivity"
+		data-scope="https://www.googleapis.com/auth/plus.login https://www.googleapis.com/auth/userinfo.email"
+		data-redirecturi="postmessage" data-accesstype="offline"> </span>
+	</span>
+	<script type="text/javascript">
+      (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/client:plusone.js';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     })();
+    </script>
+</body>
+</html>

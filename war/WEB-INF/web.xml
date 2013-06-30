@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5" xmlns="http://java.sun.com/xml/ns/javaee">
+	<servlet>
+		<servlet-name>gwtrpcServlet</servlet-name>
+		<servlet-class>com.agentaid.a.server.GwtServiceImpl</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>createUniqueSessionTokenServlet</servlet-name>
+		<servlet-class>com.agentaid.a.server.CreateUniqueSessionTokenServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>signinCallbackServlet</servlet-name>
+		<servlet-class>com.agentaid.a.server.SigninCallbackServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createUniqueSessionTokenServlet</servlet-name>
+		<url-pattern>/createUniqueSessionTokenServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>signinCallbackServlet</servlet-name>
+		<url-pattern>/signinCallbackServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>gwtrpcServlet</servlet-name>
+		<url-pattern>/agentaid/gwtrpc</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>AgentAid.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

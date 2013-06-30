@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" output="test-classes" path="test"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/google-api-client-1.13.2-beta.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/google-api-services-oauth2-v2-rev29-1.13.2-beta.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/google-http-client-1.13.1-beta.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/google-http-client-jackson-1.13.1-beta.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/google-oauth-client-1.13.1-beta.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gson-2.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/guava-jdk5-13.0.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/httpclient-4.0.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/httpcore-4.0.1.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jackson-core-2.0.5.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/jackson-core-asl-1.9.9.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/mysql-connector-java-5.1.7-bin.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/gwt-maps.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/google-api-services-plus-v1-rev53-1.13.2-beta.jar"/>
+	<classpathentry kind="lib" path="war/WEB-INF/lib/mail.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>
