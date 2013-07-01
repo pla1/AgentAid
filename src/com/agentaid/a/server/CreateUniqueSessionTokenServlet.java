@@ -39,11 +39,12 @@ public class CreateUniqueSessionTokenServlet extends HttpServlet {
 		pw.write("			contentType : 'application/octet-stream; charset=utf-8',\n");
 		pw.write("			success : function(result) {\n");
 		pw.write("				$('#results').html(result);\n");
+		pw.write("	    	$('#header').attr('style', 'visibility: visible');\n");
 		pw.write("			},\n");
 		pw.write("			processData : false,\n");
 		pw.write("			data : authResult['code']\n");
 		pw.write("		});\n");
-		pw.write("		$('#header').attr('style', 'visibility: visible');\n");
+		// pw.write("		$('#header').attr('style', 'visibility: visible');\n");
 		pw.write("	} else if (authResult['error']) {\n");
 		pw.write("	}\n");
 		pw.write("}\n");

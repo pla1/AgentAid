@@ -1,3 +1,2 @@
 # Module agentaid
 # RPC service class, partial path of RPC policy file
-com.agentaid.a.client.GwtService, D1532AA21CE620A55F00BF57A8B66DD0.gwt.rpc
